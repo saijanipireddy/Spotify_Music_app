@@ -7,7 +7,6 @@ import connectCloudinary from "./src/config/cloudinary.js";
 import albumRouter from "./src/routes/albumRoute.js";
 import User from "./src/models/UserModel.js";
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt';
 import authMiddleware from "./src/middleware/authMiddleware.js";
 
 
