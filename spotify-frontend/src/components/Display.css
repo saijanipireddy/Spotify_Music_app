@@ -1,0 +1,24 @@
+
+::-webkit-scrollbar {
+    display: none;
+  }
+.display-total {
+    height: calc(130vh - 80px); /* Adjust based on your navbar/footer height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-bottom: 100px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 80px;
+    padding-top: 40px;
+}
+h3 {
+    color: grey;
+}
+.hr-line {
+    color: white;
+    border: 1px solid grey;
+    margin-top: 15px;
+}

@@ -1,0 +1,16 @@
+.image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+h1 {
+    font-size: 22px;
+}

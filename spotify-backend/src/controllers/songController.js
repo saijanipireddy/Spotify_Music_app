@@ -4,6 +4,14 @@ import Song from "../models/Song.js";
 const addSong = async (req, res) => {
     try {
         const { name, desc, album } = req.body;
+
+       // Ensure files are uploaded
+       if (!req.files || !req.files.audio || !req.files.image) {
+        return res.status(400).json({ success: false, message: "Audio and image files are required" });
+    }
+
+
+
         const audioFile = req.files.audio[0];
         const imageFile = req.files.image[0];
 

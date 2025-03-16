@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { assets } from './../assets/frontend-assets/assets';
+import './Sidebar.css'
 
 function Sidebar() {
     const navigate = useNavigate();
@@ -35,6 +36,17 @@ function Sidebar() {
                     <h1>Let&apos;s findsome podcasts to follow</h1>
                     <p className='font-light'>We&apos;ll keep you update on new episodes</p>
                     <button className='px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4'>Browse Podcasts</button>
+                </div>
+                <div className="p-5">
+                    <div className="legal-container">
+                         <p className="text-gray-400"> Legal </p>
+                         <p className="text-gray-400">Safety & Privacycenter</p>
+                         <p className="text-gray-400">Privacy policy </p>
+                         <p className="text-gray-400">cookies </p>
+                         <p className="text-gray-400">About Ads</p>
+                         <p className="text-gray-400"> Accessability </p>
+                         <p className="text-gray-400"> Cookies </p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import DisplayHome from "./DisplayHome"
 import DisplayAlbum from "./DisplayAlbum"
 import { useContext, useEffect, useRef } from "react"
 import { PlayerContext } from "../context/PlayerContext";
+import './Display.css'
 
 function Display() {
     const { albumsData } = useContext(PlayerContext);
@@ -22,7 +23,7 @@ function Display() {
     }, [isAlbum, bgColor]);
 
     return (
-        <div ref={displayRef} className="w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white lg:w-[75%] lg:ml-0">
+        <div ref={displayRef} className="display-container w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white lg:w-[75%] lg:ml-0">
             {albumsData.length > 0 ?
                 <Routes>
                     <Route path="/" element={<DisplayHome />} />

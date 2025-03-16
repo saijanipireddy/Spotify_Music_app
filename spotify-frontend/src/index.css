@@ -30,3 +30,7 @@
 ::-webkit-scrollbar-corner {
   background: #2e2e2e;
 }
+
+.total-container {
+  height: 150vh;
+}

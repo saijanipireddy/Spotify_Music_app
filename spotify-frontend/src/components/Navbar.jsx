@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { assets } from '../assets/frontend-assets/assets'
 
+
 function Navbar() {
     const navigate = useNavigate();
     return (
@@ -14,6 +15,8 @@ function Navbar() {
                     <p className='bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer'>Explore Premium</p>
                     <p className='bg-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer'>Install App</p>
                     <p className='bg-sky-400 text-black w-7 h-7 rounded-full flex items-center justify-center'>N</p>
+                    <button className='text-gray-400 hover:text-white'>Signup</button>
+                    <button className="login-button h-10 w-20 bg-white text-black rounded-3xl transition-all duration-300 hover:bg-purple-600 hover:text-white hover:shadow-lg">Login</button>
                 </div>
             </div>
             <div className="flex items-center gap-2 mt-4">
