@@ -5,7 +5,7 @@ export const PlayerContext = createContext();
 
 const PlayerContextProvider = (props) => {
 
-    const url = 'https://sai-spotify-backend.onrender.com';
+    const url = 'https://spotify-music-app-backend.onrender.com';
 
     const audioRef = useRef();
     const seekBar = useRef();
