@@ -62,28 +62,43 @@ function DisplayHome() {
 
 
                 
-            <div className="mb-4">
+           <div className="mb-4">
                 <h1 className="my-5 font-bold text-2xl">Today&apos;s biggest hits</h1>
                 <div className="flex overflow-auto songs-container" >
                     {songsData.map((item, index) => (<SongsItem key={index} image={item.image} name={item.name} desc={item.desc} id={item._id} />))}
                 </div>
             </div>
             <div className="footer-section">
-               <div>
-                  <h2> Company</h2>
+            <div className="flex overflow-auto songs-container">
+               <div className="min-w-[180px] p-4 m-3 px-3 rounded cursor-pointer hover:bg-[#ffffff26]">
+                  <h2 className="pb-2"> Company</h2>
                   <h3> Jobs </h3>
                   <h3> About </h3>
                   <h3> For the Road </h3>
                </div>
-               <div>
-                  <h2> Communities</h2>
+               <div className="min-w-[180px] p-4 m-3 px-3 rounded cursor-pointer hover:bg-[#ffffff26]">
+                  <h2 className="pb-2"> Communities</h2>
                   <h3> For Artists </h3>
                   <h3> Developers  </h3>
                   <h3> Advertising</h3>
                   <h3> Investors </h3>
                   <h3>Vendors</h3>
                </div>
+               <div className="min-w-[180px] m-3 p-4 px-3 rounded cursor-pointer hover:bg-[#ffffff26]">
+                <h2 className="pb-2"> Useful Links </h2>
+                <h3> Support </h3>
+                <h3> Free Mobile App </h3>
+               </div>
+               <div className="min-w-[180px] m-3 p-4 px-3 rounded cursor-pointer hover:bg-[#ffffff26] text-centers">
+                <h2 className="pb-2"> Spotify Plans </h2>
+                <h3> Premium Individual </h3>
+                <h3> Premium Duo </h3>
+                <h3> Premium Family </h3>
+                <h3> Premium Student  </h3>
+                <h3>Spotify Free</h3>
+               </div>
 
+              </div>
                </div>
                <hr className="hr-line" />
                <h1 className="pt-5"> @2025 Nagasai SS</h1>
